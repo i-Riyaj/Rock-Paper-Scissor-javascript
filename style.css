@@ -1,0 +1,22 @@
+html, body{
+    height: 100vh;
+    background-color: black;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.margin{
+    margin: 1.25rem;
+}
+.flexDiv {
+   margin: 1.25rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}

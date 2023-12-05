@@ -1,5 +1,5 @@
 const rpsGame = () =>{
-    const words = ["rock", "paper", "scissor"];
+    const words = ["Rock"||"rock", "Paper", "Scissor"];
 
     const compInp = words[Math.floor((Math.random()*(words.length)))];
     
@@ -14,27 +14,27 @@ const rpsGame = () =>{
     const result = document.querySelector("#resultText");
 
     if(
-        (compInp == "rock" && userInp == "scissor")||
-        (compInp == "paper" && userInp == "rock")||
-        (compInp == "seissor" && userInp == "paper")
+        (compInp == "Rock" && userInp == "Scissor")||
+        (compInp == "Paper" && userInp == "Rock")||
+        (compInp == "Scissor" && userInp == "Paper")
     ){
         result.innerHTML = "Sorry!You Lost the round.";
         comp_Gen_Word.innerHTML = `Random generated word was : ${compInp}.`;
         user_Entered_Word.innerHTML =`Your Entered: ${userInp}.`;
         }
         else if(
-        (compInp == "scissor" && userInp == "rock")||
-        (compInp == "rock" && userInp == "paper")||
-        (compInp == "paper" && userInp == "scissor")
+        (compInp == "Scissor" && userInp == "Rock")||
+        (compInp == "Rock" && userInp == "Paper")||
+        (compInp == "Paper" && userInp == "Scissor")
     ){
         result.innerHTML = "Hurrah!You won the round.";
         comp_Gen_Word.innerHTML = `Random generated word was : ${compInp}.`;
         user_Entered_Word.innerHTML =`Your Entered: ${userInp}.`;
     }
     else if(
-        (compInp == "rock" && userInp == "rock")||
-        (compInp == "paper" && userInp == "paper")||
-        (compInp == "scissor" && userInp == "scissor")
+        (compInp == "Rock" && userInp == "Rock")||
+        (compInp == "Paper" && userInp == "Paper")||
+        (compInp == "Scissor" && userInp == "Scissor")
     ){
         result.innerHTML = "It's a tie.";
         comp_Gen_Word.innerHTML = `Random generated word was : ${compInp}.`;
@@ -42,8 +42,10 @@ const rpsGame = () =>{
     }
     else{
         result.innerHTML = "Something Wrong.";
+        comp_Gen_Word.innerHTML = `Random generated word was : ${compInp}.`;
+        user_Entered_Word.innerHTML =`Your Entered: ${userInp}.`;
     }
-    const output = document.querySelector(".outputSection");
+    const output = document.querySelector("#outputSection");
     output.className = "resultArea";     
 }
 btn1.addEventListener('click',rpsGame); 

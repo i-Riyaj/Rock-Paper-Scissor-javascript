@@ -10,11 +10,11 @@ html, body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.flexDiv {
-   margin: 1.25rem;
-   display: flex;
-   flex-direction: column;
-   gap: 0.5rem;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {

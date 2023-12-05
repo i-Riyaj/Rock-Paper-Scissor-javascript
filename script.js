@@ -1,5 +1,5 @@
 const rpsGame = () =>{
-    const words = ["Rock"||"rock", "Paper", "Scissor"];
+    const words = ["Rock", "Paper", "Scissor"];
 
     const compInp = words[Math.floor((Math.random()*(words.length)))];
     

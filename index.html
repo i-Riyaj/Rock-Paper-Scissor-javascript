@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="margin">
-        <h1 class="h1margin bgcolor display">Rock-Paper-scissor</h1>
-    </div>
+    <header class="header">
+        <h1 class="titleBar">Rock-Paper-scissor</h1>
+    </header>
+    <main class="main">
+        <div class="userInputSection">
+
+            <label for="userInput" class="userInp">Enter your word:</label>
+
+            <input type="text" name="userInput" id="userInput" class="userInp"
+            placeholder="rock/paper/scissor" maxlength="7">
+
+            <input type="button" value="submit" id="btn1">
+
+        </div>
+
+        <div class="resultArea outputSection">
+
+            <p id="resultText" style="font-size: 3rem"></p>
+
+            <p id="compGenWord" style="font-size: 1.5rem"></p>
+
+            <p id="userEnteredWord" style="font-size: 1.5rem"></p>
+
+        </div>
+    </main>
+        
+    
     <script src="script.js"></script>
 </body>
 </html>

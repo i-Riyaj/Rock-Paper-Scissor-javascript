@@ -1,21 +1,90 @@
 html, body{
-    background-color: hsl(272, 88%, 44%)
+    min-height: 100vh;
+    background-color: hsl(278, 78%, 29%);
 }
 *{
-    padding: 0;
-    margin: 0;
+    font-size: 10px;
+    padding: 0rem;
+    margin: 0rem;
     box-sizing: border-box;
-    color: white;
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.margin{
-    margin: 1.25rem;
-}
 .flexDiv {
    margin: 1.25rem;
    display: flex;
    flex-direction: column;
    gap: 0.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleBar {
+    color: white;;
+    font-size: 5rem;
+    margin-top: 0.5rem;
+}
+
+.main  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+#wordList {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.userInputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInp {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#userInput {
+    padding: 0.8rem;
+    color: black;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: -0.5rem 0.5rem 0rem;
+}
+
+#btn1 {
+    font-size: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0rem;;
+}
+
+.resultArea {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (max-width:600px){
+    .titleBar {
+        font-size: 3rem;
+    }
+    .userInputSection {
+        flex-direction: column;
+
+    }
 }
